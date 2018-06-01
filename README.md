@@ -4,6 +4,7 @@
 # Index
 
 ## [Description](#index_description)
+## [Requirements](#index_requirements)
 ## [Use Cases](#index_use_cases)
 ## [Provided Files and Directories](#index_files)
 ## [Installation](#index_installation)
@@ -12,6 +13,13 @@
 <a name="index_description"></a><h2>Description</h2>
 
 bash script, which creates a skeleton directory with the necessary bunch of files for a fresh github PHP repository
+
+<a name="index_requirements"></a><h2>Requirements</h2>
+
+## make sure, that you are running a bash version >= 4.4 
+
+   bash --version
+
 
 <a name="index_use_cases"></a><h2>Use Cases</h2>
 
