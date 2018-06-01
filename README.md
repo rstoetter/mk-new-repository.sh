@@ -18,7 +18,7 @@ bash script, which creates a skeleton directory with the necessary bunch of file
 
 ## make sure, that you are running a bash version >= 4.4 
 
-   bash --version
+    bash --version
 
 
 <a name="index_use_cases"></a><h2>Use Cases</h2>
