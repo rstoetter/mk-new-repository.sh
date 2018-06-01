@@ -16,7 +16,7 @@ bash script, which creates a skeleton directory with the necessary bunch of file
 
 <a name="index_requirements"></a><h2>Requirements</h2>
 
-## make sure, that you are running a bash version >= 4.4 
+make sure, that you are running a bash version >= 4.4 
 
     bash --version
 
