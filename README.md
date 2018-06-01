@@ -5,10 +5,8 @@
 
 ## [Description](#index_description)
 ## [Use Cases](#index_use_cases)
-## [Provided Classes](#index_classes)
-## [Namespaces](#index_namespaces)
+## [Provided Files and Directories](#index_files)
 ## [Installation](#index_installation)
-## [Usage Example](#index_example)
 ## [More Informations](#index_informations)
 
 <a name="index_description"></a><h2>Description</h2>
@@ -17,44 +15,55 @@ bash script, which creates a skeleton directory with the necessary bunch of file
 
 <a name="index_use_cases"></a><h2>Use Cases</h2>
 
-<a name="index_classes"></a><h2>Provided Classes</h2>
+## What you should have done before executing the bash script mk-new-repository.sh
 
-The class \rstoetter\rstoetter\\_name_space_\\\_class_name_ is the main class of the repository rstoetter/mk-new-repository.sh.
+- create a new EMPTY ( no files! ) repository on github 
+- save the first wiki page 
 
-There are no helper classes necessary in order to use the class _class_name_:
+## executing the bash script mk-new-repository.sh
 
-But you will need PHP 7 or later to use this repository
+    mk-new-repository.sh vendor_string repository_name namespace class_name
 
-<a name="index_namespaces"></a><h2>Namespace</h2>
+- the first parameter is the vendor string on github (your username) ie: 'rstoetter'"
+- the second parameter is the name the new repository ie: 'cdependencymanager-php'"
+- the third parameter is the name of the namespace ie: 'cdependencymanager'"
+- the fourth parameter is the name of the main class provided by your repository ie: 'myClass'"
 
-Use the [namespace](http://php.net/manual/en/language.namespaces.php) **rstoetter\rstoetter\\_name_space_\\** in order to access the classes provided by the repository rstoetter/mk-new-repository.sh.
+The bash script will then create a directory withe the name 'repository_name' and fill it with files and directories you may find useful in order to start your new project
+
+<a name="index_files"></a><h2>Provided Files and Directories</h2>
+
+    <RepositoryName>
+    ├── ./CHANGELOG.md
+    ├── ./composer.json
+    ├── ./git-add.sh
+    ├── ./git-push-<RepositoryName>.sh
+    ├── ./git-revision.sh
+    ├── ./LICENSE
+    ├── ./phpdoc-make-md-<RepositoryName>.sh
+    ├── ./phpdocmd.sh
+    ├── ./phpdoc-<RepositoryName>.cfg
+    ├── ./phpdoc-<RepositoryName>.sh
+    ├── ./phpdoc.sh
+    ├── ./phpDocumentor.xref
+    ├── ./phpunit.xml
+    ├── ./README.md
+    ├── ./src
+    ├── ./tests
+    └── ./wiki
+        ├── ./wiki/git-clone-documentation.sh
+        └── ./wiki/<RepositoryName>.wiki
+            ├── ./wiki/<RepositoryName>.wiki/English-Documentation.md
+            ├── ./wiki/<RepositoryName>.wiki/English-Reference.md
+            ├── ./wiki/<RepositoryName>.wiki/_Footer.md
+            ├── ./wiki/<RepositoryName>.wiki/git-add.sh
+            ├── ./wiki/<RepositoryName>.wiki/git-push-wiki-<RepositoryName>.sh
+            ├── ./wiki/<RepositoryName>.wiki/git-update-documentation.sh
+            └── ./wiki/<RepositoryName>.wiki/Home.md
 
 <a name="index_installation"></a><h2>Installation</h2>
 
-The releases of the repository rstoetter/mk-new-repository.sh are hosted by [Packagist](https://packagist.org), the main [composer](https://getcomposer.org/) repository. The repository assumes that you have composer installed. Simply add:
-
-    "require" : {
-
-        "rstoetter/mk-new-repository.sh" : ">=1.0.0"
-
-    }
-
-to your **composer.json**, and then you can simply install it with the command:
-
-    composer install
-
-<a name="index_example"></a><h2>Usage Example</h2>
-
-```php
-
-//
-// end the program
-//
-
-die( PHP_EOL . PHP_EOL . ' program finished in ' . __FILE__ . ' on line ' . __LINE__  . PHP_EOL );
-
-
-```
+    git clone https://github.com/rstoetter/mk-new-repository.sh.git
 
 
 <a name="index_informations"></a><h2>More Information</h2>
